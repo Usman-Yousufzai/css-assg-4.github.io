@@ -1,0 +1,453 @@
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    nav {
+      margin-top: 10px;
+      background-image: linear-gradient(to right,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.3));
+    }
+
+    @media only screen and (max-width: 767px) {
+      .nav-div {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        position: absolute;
+        left: 2px;
+      }
+
+      nav {
+        margin-top: 10px;
+        background-image: linear-gradient(to right,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.3));
+        height: 400px;
+      }
+
+      ul {
+        margin-top: 50px;
+      }
+
+      li {
+        display: block;
+      }
+    }
+
+    .nav-div {
+      display: flex;
+    }
+
+    ul {
+      display: flex;
+      float: right;
+    }
+
+    li {
+      list-style-type: none;
+      margin: 20px;
+      margin-left: 30px;
+    }
+
+    .background-img {
+      background-image: url(/Screenshot\ 2023-03-15\ 191608.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .nav-heading {
+      display: inline-block;
+      margin: 20px;
+      color: white;
+      font-style: bold;
+      letter-spacing: 1px;
+      word-spacing: 3px;
+    }
+
+    .welcome-heading {
+      margin: 20px;
+    }
+
+    .join-btn {
+      background-color: red;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      height: 40px;
+      width: 110px;
+      margin: 20px;
+    }
+
+    .hero-div {
+      width: 500px;
+      margin-left: 70px;
+      margin-top: 100px;
+      color: white;
+      display: block;
+    }
+
+    .block {
+      display: block;
+    }
+
+    .cards {
+      background-color: red;
+      height: 150px;
+      width: 250px;
+      color: white;
+      border-radius: 15px;
+      padding-top: 100px;
+      display: inline-block;
+      margin: 8px;
+    }
+
+    .card-heading {
+      font-size: 20px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    .card-paragraph {
+      font-size: 10px;
+      text-align-last: center;
+      text-align: center;
+      text-indent: 10px;
+    }
+
+    .card-div {
+      margin: 100px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-left: 400px;
+    }
+
+    .arrow-btn {
+      height: 30px;
+      width: 30px;
+      border-radius: 25px;
+      border: none;
+    }
+
+    .background-img-2 {
+      height: 100vh;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Screenshot\ 2023-03-15\ 191800.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .join-btn {
+      background-color: rgba(159, 46, 48, 255);
+      border: none;
+      border-radius: 25px;
+      color: white;
+      height: 40px;
+      width: 110px;
+      margin: 20px;
+      margin-top: 50px;
+    }
+
+    .div-1 {
+      background-image: linear-gradient(to right,
+          rgba(255, 255, 255, 0.4),
+          rgba(255, 255, 255, 0.4));
+      width: 500px;
+      color: white;
+      margin-top: 80px;
+      margin-left: 200px;
+      padding: 20px;
+      display: inline-block;
+      margin-top: 150px;
+    }
+
+    .heading-apply {
+      font-size: 20px;
+    }
+
+    .div-2 {
+      background-image: linear-gradient(to right,
+          rgba(255, 255, 255, 0.4),
+          rgba(255, 255, 255, 0.4));
+      width: 500px;
+      color: white;
+      margin-top: 40px;
+      margin-left: 200px;
+      padding: 20px;
+    }
+
+    .btn-2 {
+      background-color: rgba(246, 164, 39, 255);
+    }
+
+    .d-1-2 {
+      display: inline-block;
+    }
+
+    .div-3 {
+      display: inline-block;
+      background-color: white;
+      width: 430px;
+      height: 425px;
+      vertical-align: top;
+      border-radius: 10px;
+      margin-top: 150px;
+      margin-left: 50px;
+      padding: 30px;
+    }
+
+    .div3-heading {
+      color: rgba(246, 164, 39, 255);
+      margin-bottom: 30px;
+    }
+
+    .div3-para {
+      width: 400px;
+      margin-left: 20px;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    .para-sp {
+      color: rgb(6, 236, 236);
+    }
+
+    .paragraphs {
+      color: rgb(51, 51, 51);
+      font-size: 10px;
+      margin-left: 40px;
+      display: inline-block;
+    }
+
+    .arrows {
+      display: inline-block;
+      float: right;
+    }
+
+    .heading-margin {
+      margin-bottom: 30px;
+      margin-top: 10px;
+    }
+
+    .background-3 {
+      height: 100vh;
+      width: 100vw;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./Capture.PNG);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 110px;
+    }
+
+    .about-u{
+      background-color: white;
+      width: 46vw;
+      height: 50vh;
+      padding: 25px;
+      margin: 100px;
+      border-radius: 10px;
+      margin-right: 30px;
+      padding-bottom: 50px;
+    }
+    textarea{
+      display: block;
+      margin-top: 50px;
+      background-color: rgb(238, 238, 238);
+      border: none;
+      border-radius: 10px;
+      padding: 15px;
+
+    }
+    .bars{
+      margin-right: 40px;
+      width: 200px;
+      height: 30px;
+      background-color: rgb(238, 238, 238);
+      border: none;
+      border-radius: 25px;
+    }
+    .btn-msg{
+      background-color: rgba(159, 46, 48, 255);
+      border: none;
+      border-radius: 25px;
+      color: white;
+      height: 40px;
+      width: 180px;
+      margin: 20px;
+      margin-top: 40px;
+      margin-left: 0%;
+    }
+
+    .display-3{
+      display: flex;
+      margin-left: 125px;
+    }
+
+    .about-me{
+      color: white;
+      background-color: rgba(159, 46, 48, 255);
+      padding: 30px;
+      border-radius: 15px;
+      height: 450px;
+      margin-top: 80px;
+
+    }
+    hr{
+      width: 150px;
+      margin: 30px;
+      background-color: black;
+    }
+
+    .about-para{
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-img">
+    <nav>
+      <h1 class="nav-heading">EDU MEETING</h1>
+      <ul>
+        <div class="nav-div">
+          <li>CONTACT US</li>
+          <li>COURSES</li>
+          <li>PAGES</li>
+          <li>APPLY NOW</li>
+          <li>MEETING</li>
+          <li>HOME</li>
+        </div>
+      </ul>
+    </nav>
+    <div class="block">
+      <div class="hero-div">
+        <p>HELLO STUDENTS</p>
+        <h1 class="welcome-heading">WELCOME TO EDUCATION</h1>
+        <p>
+          Lorem ipsum dolor consectetur adipisicing . In ex soluta distinctio
+          rem eligendi minima, iure suscipit amet nulla tenetur saepe obcaecati
+          quia atque, dolor magnam illum Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Totam. ratione iste! In!
+        </p>
+        <button class="join-btn">JOIN US NOW</button>
+      </div>
+    </div>
+    <div class="card-div">
+      <div class="cards">
+        <h1 class="card-heading">best education</h1>
+        <p class="card-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ullam
+          elige Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Fugit.
+        </p>
+      </div>
+      <div class="cards">
+        <h1 class="card-heading">best students</h1>
+        <p class="card-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ullam
+          elige Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Fugit.
+        </p>
+      </div>
+      <div class="cards">
+        <h1 class="card-heading">best education</h1>
+        <p class="card-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ullam
+          elige Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Fugit.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 2nd page -->
+  <div class="background-img-2">
+    <div class="d-1-2">
+      <div class="div-1">
+        <h1 class="heading-apply">APPLY FOR BECHALOR DEGREE</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae
+          itaque temporibus debitis inventore hic dignissimos eaque
+          voluptatibus quos voluptate!
+        </p>
+        <button class="join-btn">JOIN US NOW!</button>
+      </div>
+
+      <div class="div-2">
+        <h1 class="heading-apply">APPLY FOR BECHALOR DEGREE</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quae
+          itaque temporibus debitis inventore hic dignissimos eaque
+          voluptatibus quos voluptate!
+        </p>
+        <button class="join-btn btn-2">JOIN US NOW!</button>
+      </div>
+    </div>
+
+    <div class="div-3">
+      <h4 class="div3-heading">About Edu Meeting HTML Template</h4>
+      <p class="div3-para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+        obcaecati tempora quae enim aut repudiandae veniam
+        <span class="para-sp"> pariatur temporibus</span> nesciunt ad ducimus
+        laborum, beatae unde nobis modi molestiae quo
+        <span class="para-sp"> accusamus maxime</span>
+      </p>
+      <h4 class="heading-margin">HTML CSS BOOTSTRAP Layout</h4>
+      <h1 class="arrows">&#8250;</h1>
+      <p class="paragraphs">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      </p>
+
+      <h4 class="heading-margin">Please tell your friends</h4>
+      <h1 class="arrows">&#8250;</h1>
+      <p class="paragraphs">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+
+      <h4 class="heading-margin">Share this to your colleagues</h4>
+      <h1 class="arrows">&#8250;</h1>
+      <p class="paragraphs">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <!-- page-3 -->
+  <div class="background-3">
+    <div class="display-3">
+    <div class="about-u">
+      <h1>LETS GET IN TOUCH</h1>
+      <br>
+      <br>
+      <input type="text" placeholder="YOUR NAME..." class="bars">
+      <input type="email" placeholder="YOUR EMAIL..." class="bars">
+      <input type="text" placeholder="SUBJECT..." class="bars">
+      <textarea cols="90" rows="10" placeholder="YOUR MESSAGE..."></textarea>
+      <button class="btn-msg">SEND MESSAGE NOW</button>
+    </div>
+    <div class="about-me">
+      <h3>Phone Number</h6>
+      <p class="about-para">010-020-030</p>
+      <hr>
+  
+      <h3>Email Address</h3>
+      <p class="about-para">info@meeting.edu</p>
+      <hr>
+  
+      <h3>Street Address</h3>
+      <p class="about-para">Suffah Computers Education</p>
+      <hr>
+  
+      <h3>Website URL</h3>
+      <p class="about-para">www.meeting.edu</p>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
